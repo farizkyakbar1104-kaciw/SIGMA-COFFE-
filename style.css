@@ -1,0 +1,406 @@
+/* ===========================
+   SIGMA COFFE STORE
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f4f7fb;
+    color:#333;
+}
+
+/* ================= HEADER ================= */
+
+header{
+    background:#0d6efd;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    position:sticky;
+    top:0;
+    z-index:100;
+}
+
+.logo h1{
+    font-size:34px;
+}
+
+.logo span{
+    color:#ffd54f;
+}
+
+.logo p{
+    font-size:14px;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:25px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-weight:500;
+}
+
+nav ul li a:hover{
+    color:#ffd54f;
+}
+
+/* ================= HERO ================= */
+
+.hero{
+    height:420px;
+    background:linear-gradient(rgba(0,0,0,.4),
+    rgba(0,0,0,.4)),
+    url("image/sigma_6.png");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
+
+.hero h2{
+    font-size:45px;
+}
+
+.hero p{
+    margin:20px 0;
+    font-size:18px;
+}
+
+.btn{
+    display:inline-block;
+    background:#ffd54f;
+    color:#000;
+    padding:12px 30px;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
+}
+
+.btn:hover{
+    background:white;
+}
+
+/* ================= SEARCH ================= */
+
+.search{
+    text-align:center;
+    padding:30px;
+}
+
+.search input{
+    width:60%;
+    padding:15px;
+    border-radius:30px;
+    border:1px solid #ccc;
+    font-size:16px;
+}
+
+/* ================= JUDUL ================= */
+
+.judul{
+    text-align:center;
+    margin:30px;
+    color:#0d6efd;
+    font-size:35px;
+}
+
+/* ================= PRODUK ================= */
+
+.container{
+    width:90%;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(270px,1fr));
+    gap:25px;
+    margin-bottom:40px;
+}
+
+.card{
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card img{
+    width:100%;
+    height:400px;
+    object-fit:cover;
+    background:#fff;
+}
+
+.card h3{
+    padding:15px;
+    color:#0d6efd;
+}
+
+.harga{
+    color:red;
+    font-size:24px;
+    font-weight:bold;
+    padding:0 15px;
+}
+
+.deskripsi{
+    padding:15px;
+    text-align:justify;
+    min-height:90px;
+}
+
+.card button{
+    width:90%;
+    margin:15px;
+    padding:12px;
+    border:none;
+    border-radius:8px;
+    background:#0d6efd;
+    color:white;
+    cursor:pointer;
+    font-size:16px;
+}
+
+.card button:hover{
+    background:#084298;
+}
+
+/* ================= ARTIKEL ================= */
+
+.artikel{
+    width:90%;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(400px,1fr));
+    gap:25px;
+    margin-bottom:50px;
+}
+
+.artikel-card{
+    background:white;
+    border-radius:35px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+
+.artikel-card img{
+    width:100%;
+    height:400px;
+    object-fit:cover;
+}
+
+.artikel-card h3{
+    padding:15px;
+    color:#0d6efd;
+}
+
+.artikel-card p{
+    padding:0 15px 20px;
+    text-align:justify;
+}
+
+/* ================= KERANJANG ================= */
+
+#cart{
+    width:90%;
+    margin:40px auto;
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+
+#cart ul{
+    margin:20px 0;
+}
+
+#cart li{
+    margin:8px 0;
+}
+
+/* ================= CHECKOUT ================= */
+
+#checkout{
+    width:90%;
+    margin:40px auto;
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+
+#checkout form{
+    display:flex;
+    flex-direction:column;
+}
+
+#checkout input{
+    margin:10px 0;
+    padding:15px;
+    border:1px solid #ccc;
+    border-radius:8px;
+}
+
+#checkout button{
+    margin-top:15px;
+    padding:15px;
+    border:none;
+    background:#0d6efd;
+    color:white;
+    font-size:18px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+#checkout button:hover{
+    background:#084298;
+}
+
+/* ================= ADMIN ================= */
+
+#admin{
+    width:90%;
+    margin:40px auto;
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+
+#admin input{
+    width:100%;
+    margin:10px 0;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:8px;
+}
+
+#admin button{
+    width:100%;
+    padding:12px;
+    background:#0d6efd;
+    color:white;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+#admin button:hover{
+    background:#084298;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+}
+
+table th{
+    background:#0d6efd;
+    color:white;
+}
+
+table th,
+table td{
+    border:1px solid #ddd;
+    padding:12px;
+    text-align:center;
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+    margin-top:50px;
+    background:#0d6efd;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+/* ================= WHATSAPP ================= */
+
+.wa{
+    position:fixed;
+    right:25px;
+    bottom:25px;
+    width:65px;
+    height:65px;
+    background:#25D366;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    font-size:35px;
+    text-decoration:none;
+    box-shadow:0 5px 15px rgba(0,0,0,.3);
+}
+
+.wa:hover{
+    transform:scale(1.1);
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:768px){
+
+header{
+    flex-direction:column;
+}
+
+nav ul{
+    flex-wrap:wrap;
+    justify-content:center;
+    margin-top:15px;
+}
+
+nav ul li{
+    margin:10px;
+}
+
+.hero h2{
+    font-size:30px;
+}
+
+.search input{
+    width:90%;
+}
+
+.artikel{
+    grid-template-columns:1fr;
+}
+
+.container{
+    grid-template-columns:1fr;
+}
+
+.card img{
+    height:220px;
+}
+
+.artikel-card img{
+    height:220px;
+}
+
+}

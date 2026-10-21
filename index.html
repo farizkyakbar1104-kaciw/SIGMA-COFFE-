@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sigma Coffe Store</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icon -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header>
+
+<div class="logo">
+
+<h1>Sigma <span>Coffe</span></h1>
+
+<p>Kopi Botolan & Kacamata Premium</p>
+
+</div>
+
+<nav>
+
+<ul>
+
+<li><a href="#">Home</a></li>
+
+<li><a href="#produk">Produk</a></li>
+
+<li><a href="#artikel">Artikel</a></li>
+
+<li><a href="#checkout">Checkout</a></li>
+</ul>
+
+</nav>
+
+</header>
+
+<!-- ================= HERO ================= -->
+
+<section class="hero">
+
+<div class="hero-text">
+
+<h2>Nikmati Kopi Premium Setiap Hari</h2>
+
+<p>
+Sigma Coffe menghadirkan kopi botolan berkualitas
+dan kacamata modern dengan harga terjangkau.
+</p>
+
+<a href="#produk" class="btn">
+Belanja Sekarang
+</a>
+
+</div>
+
+</section>
+
+<!-- ================= SEARCH ================= -->
+
+<section class="search">
+
+<input
+type="text"
+id="search"
+placeholder="Cari Produk..."
+onkeyup="cariProduk()">
+
+</section>
+
+<!-- ================= PRODUK ================= -->
+
+<section id="produk">
+
+<h2 class="judul">
+Produk Kami
+</h2>
+
+<div class="container">
+
+<!-- Produk 1 -->
+
+<div class="card produk">
+
+<img src="image/sigma_1.png" alt="Produk Sigma Coffe">
+
+<h3>Sigma Coffe Latte 250 ml</h3>
+
+<p class="harga">
+Rp15.000
+</p>
+
+<p class="deskripsi">
+Kopi susu premium dengan rasa creamy,
+cocok diminum kapan saja.
+</p>
+
+<button
+onclick="tambahKeranjang('Sigma Coffe Latte 250 ml',15000)">
+Tambah Keranjang
+</button>
+
+</div>
+
+<!-- Produk 2 -->
+
+<div class="card produk">
+
+<img src="image/sigma_2.png" alt="Produk Sigma Coffe">
+
+<h3>Sigma Coffe Latte 500 ml</h3>
+
+<p class="harga">
+Rp25.000
+</p>
+
+<p class="deskripsi">
+Ukuran sedang untuk menemani aktivitas
+sepanjang hari.
+</p>
+
+<button
+onclick="tambahKeranjang('Sigma Coffe Latte 500 ml',25000)">
+Tambah Keranjang
+</button>
+
+</div>
+
+<!-- Produk 3 -->
+
+<div class="card produk">
+
+<img src="image/sigma_3.png" alt="Produk Sigma Coffe">
+
+<h3>Sigma Coffe Latte 1 Liter</h3>
+
+<p class="harga">
+Rp45.000
+</p>
+
+<p class="deskripsi">
+Pilihan terbaik untuk dinikmati
+bersama keluarga.
+</p>
+
+<button
+onclick="tambahKeranjang('Sigma Coffe Latte 1 Liter',45000)">
+Tambah Keranjang
+</button>
+
+</div>
+
+<!-- Produk 4 -->
+
+<div class="card produk">
+
+<img src="image/sigma_4.png" alt="Produk Sigma Coffe">
+
+<h3>Kacamata Hitam</h3>
+
+<p class="harga">
+Rp175.000
+</p>
+
+<p class="deskripsi">
+Frame hitam dengan lensa hitam
+bergaya elegan.
+</p>
+
+<button
+onclick="tambahKeranjang('Kacamata Hitam',175000)">
+Tambah Keranjang
+</button>
+
+</div>
+
+<!-- Produk 5 -->
+
+<div class="card produk">
+
+<img src="image/sigma_5.png" alt="Produk Sigma Coffe">
+
+<h3>Kacamata Silver</h3>
+
+<p class="harga">
+Rp185.000
+</p>
+
+<p class="deskripsi">
+Frame hitam dengan aksen silver
+yang modern.
+</p>
+
+<button
+onclick="tambahKeranjang('Kacamata Silver',185000)">
+Tambah Keranjang
+</button>
+
+</div>
+
+<!-- Produk 6 -->
+
+<div class="card produk">
+
+<img src="image/sigma_7.png" alt="Produk Sigma Coffe">
+
+<h3>Frame Hitam</h3>
+
+<p class="harga">
+Rp95.000
+</p>
+
+<p class="deskripsi">
+Frame hitam tanpa lensa,
+siap dipasang sesuai kebutuhan.
+</p>
+
+<button
+onclick="tambahKeranjang('Frame Hitam',95000)">
+Tambah Keranjang
+</button>
+
+</div>
+
+<!-- Produk 7 -->
+
+<div class="card produk">
+
+<img src="image/sigma_8.png" alt="Produk Sigma Coffe">
+
+<h3>Kacamata Frame Abu</h3>
+
+<p class="harga">
+Rp165.000
+</p>
+
+<p class="deskripsi">
+Frame abu dengan kaca bening
+yang nyaman digunakan.
+</p>
+
+<button
+onclick="tambahKeranjang('Frame Abu',165000)">
+Tambah Keranjang
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= ARTIKEL ================= -->
+
+<section id="artikel">
+
+<h2 class="judul">
+Artikel Produk
+</h2>
+
+<div class="artikel">
+
+<div class="artikel-card">
+
+<img src="image/sigma_1.png" alt="Produk Sigma Coffe">
+
+<h3>Kenikmatan Kopi Sigma Coffe</h3>
+
+<p>
+Kopi Sigma Coffe dibuat dari biji kopi pilihan sehingga
+menghasilkan rasa yang nikmat dan aroma khas.
+</p>
+
+</div>
+
+<div class="artikel-card">
+
+<img src="image/sigma_4.png" alt="Produk Sigma Coffe">
+
+<h3>Kacamata Berkualitas</h3>
+
+<p>
+Kacamata Sigma dibuat menggunakan material
+berkualitas sehingga nyaman digunakan sehari-hari.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= KERANJANG ================= -->
+
+<section id="cart">
+
+<h2>Keranjang Belanja</h2>
+
+<ul id="listKeranjang">
+
+</ul>
+
+<h3>
+Total : Rp
+<span id="total">0</span>
+</h3>
+
+</section>
+
+<!-- ================= CHECKOUT ================= -->
+
+<section id="checkout">
+
+<h2>Checkout</h2>
+
+<form>
+
+<input
+type="text"
+placeholder="Nama Lengkap">
+
+<input
+type="text"
+placeholder="Alamat Lengkap">
+
+<input
+type="text"
+placeholder="Nomor WhatsApp">
+
+<button>
+Pesan Sekarang
+</button>
+
+</form>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+<p>
+
+© 2026 Sigma Coffe Store
+
+</p>
+
+</footer>
+
+<!-- WhatsApp -->
+
+<a
+href="https://wa.me/6281234567890"
+class="wa">
+
+<i class="fa-brands fa-whatsapp"></i>
+
+</a>
+
+<!-- Javascript -->
+
+<script src="script.js"></script>
+
+</body>
+</html>
